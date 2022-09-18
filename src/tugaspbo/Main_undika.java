@@ -23,8 +23,8 @@ public class Main_undika {
         try{
             while (true) {
         System.out.println("========MENU=========");
-        System.out.println("1 : Inputkan Data");
-        System.out.println("2 : Ouputkan Data");
+        System.out.println("1 : Cek SPP Mahasiswa");
+        System.out.println("2 : Cek Gaji Karyawan");
         System.out.println("3 : Exit");
         System.out.println("Masukkan Angka :");
         int angka=Integer.parseInt(k.readLine());
