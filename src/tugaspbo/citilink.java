@@ -72,12 +72,16 @@ public class citilink extends tiket {
         super.infotiket(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
     public void total() {
-        System.out.println("Jumlah Penumpang = "+ getJumlahPenumpang());
-        System.out.println("Harga = "+ getHarga());
+        System.out.println("Booking ID : "+ super.getBookingID());
+        System.out.println("NIK : "+ super.getNik());
+        System.out.println("Nama : "+ super.getNama()+"/ "+ getJumlahPenumpang());
+        System.out.println("Kotal Asal = "+ getKotaAsal());       
         System.out.println("Kota Tujuan = "+ getKotaTujuan());
+        System.out.println("Tanggal berangkat : "+ getTglBerangkat());
+        System.out.println("Tanggal kembali : "+ getTglKembali());
         System.out.println("Nomor Pesawat = "+ getNoPesawat());
-        System.out.println("Nomor Kursi = "+ getNoKursi());
-        System.out.println("Kotal Asal = "+ getKotaAsal());
+        System.out.println("Nomor Kursi = "+ getNoKursi());        
+        System.out.println("Harga = "+ getHarga());       
         System.out.println("Total = "+(getJumlahPenumpang()*getHarga()));
         
     }
