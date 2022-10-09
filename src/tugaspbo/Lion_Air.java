@@ -74,14 +74,14 @@ public class Lion_Air extends tiket {
         System.out.println("Booking ID : "+ super.getBookingID());
         System.out.println("NIK : "+ super.getNik());
         System.out.println("Nama : "+ super.getNama()+"/ "+ getJumlahPenumpang());
-        System.out.println("Kotal Asal = "+ getKotaAsal());       
-        System.out.println("Kota Tujuan = "+ getKotaTujuan());
+        System.out.println("Kotal Asal : "+ getKotaAsal());       
+        System.out.println("Kota Tujuan : "+ getKotaTujuan());
         System.out.println("Tanggal berangkat : "+ getTglBerangkat());
         System.out.println("Tanggal kembali : "+ getTglKembali());
-        System.out.println("Nomor Pesawat = "+ getNoPesawat());
-        System.out.println("Nomor Kursi = "+ getNoKursi());        
-        System.out.println("Harga = "+ getHarga());       
-        System.out.println("Total = "+(getJumlahPenumpang()*getHarga()));
+        System.out.println("Nomor Pesawat : "+ getNoPesawat());
+        System.out.println("Nomor Kursi : "+ getNoKursi());        
+        System.out.println("Harga : "+ getHarga());       
+        System.out.println("Total : "+(getJumlahPenumpang()*getHarga()));
         
     }
     
