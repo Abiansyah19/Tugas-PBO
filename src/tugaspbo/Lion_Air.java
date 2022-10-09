@@ -71,6 +71,8 @@ public class Lion_Air extends tiket {
         super.infotiket(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
     public void total() {
+        System.out.println("\n Preview Tiket Lion Air");
+        System.out.println("========================================================");
         System.out.println("Booking ID : "+ super.getBookingID());
         System.out.println("NIK : "+ super.getNik());
         System.out.println("Nama : "+ super.getNama()+"/ "+ getJumlahPenumpang());
