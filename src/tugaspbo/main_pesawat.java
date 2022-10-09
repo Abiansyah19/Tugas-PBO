@@ -37,7 +37,7 @@ public class main_pesawat {
         System.out.println("-- Pilih Maskapai --");
         System.out.println("1. Lion Air");
         System.out.println("2. Citilink");
-        System.out.println("Masukkan Angka :");
+        System.out.println("Pilih Maskapai :");
         int angka=Integer.parseInt(a.readLine());
         System.out.println("");
         switch(angka){
@@ -96,7 +96,7 @@ public class main_pesawat {
         System.out.println("-- Pilih Maskapai --");
         System.out.println("1. Lion Air");
         System.out.println("2. Citilink");
-        System.out.println("Masukkan Angka :");
+        System.out.println("Pilih Maskapai :");
         int angka=Integer.parseInt(a.readLine());
         System.out.println("");
         switch(angka){
