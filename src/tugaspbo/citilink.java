@@ -9,7 +9,7 @@ package tugaspbo;
  * @author haris fajar
  */
 public class citilink extends tiket {
-    private int jumlahPenumpang, harga;
+    private int jumlahPenumpang, harga, total;
     private String kotaTujuan, noPesawat, noKursi;
 
     public citilink(int jumlahPenumpang, String kotaTujuan, String kotaAsal, String noPesawat, String noKursi, String bookingID, String nik, String nama, String jenis_kelamin, String tglBerangkat, String tglKembali, int harga) {
@@ -66,7 +66,9 @@ public class citilink extends tiket {
         }
         return harga;
     }
-    
+    public int getTotal(){
+        return getHarga()*getJumlahPenumpang();
+    }
     @Override
     public void infotiket() {
         super.infotiket(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
@@ -84,9 +86,8 @@ public class citilink extends tiket {
         System.out.println("Nomor Pesawat : "+ getNoPesawat());
         System.out.println("Nomor Kursi : "+ getNoKursi());        
         System.out.println("Harga : "+ getHarga());       
-        System.out.println("Total : "+(getJumlahPenumpang()*getHarga()));
-        
     }
+    
     
     
 }
