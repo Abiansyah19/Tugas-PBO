@@ -9,7 +9,7 @@ package tugaspbo;
  * @author haris fajar
  */
 public class Lion_Air extends tiket {
-        private int jumlahPenumpang, harga;
+        private int jumlahPenumpang, harga, total;
     private String kotaTujuan, noPesawat, noKursi;
 
         public Lion_Air(int jumlahPenumpang, String kotaTujuan, String kotaAsal, String noPesawat, String noKursi, String bookingID, String nik, String nama, String jenis_kelamin, String tglBerangkat, String tglKembali, int harga) {
@@ -65,7 +65,10 @@ public class Lion_Air extends tiket {
     public String getNoKursi() {
         return noKursi;
     }
-
+    public int getTotal(){
+        
+        return getHarga()*getJumlahPenumpang();
+    }
     @Override
     public void infotiket() {
         super.infotiket(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
@@ -83,8 +86,7 @@ public class Lion_Air extends tiket {
         System.out.println("Nomor Pesawat : "+ getNoPesawat());
         System.out.println("Nomor Kursi : "+ getNoKursi());        
         System.out.println("Harga : "+ getHarga());       
-        System.out.println("Total : "+(getJumlahPenumpang()*getHarga()));
-        
+
     }
     
 }
